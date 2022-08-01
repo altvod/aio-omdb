@@ -8,3 +8,7 @@ class InvalidAPIKey(OMDBClientError):
 
 class MovieNotFound(OMDBClientError):
     pass
+
+
+class InvalidItemOffset(OMDBClientError):
+    pass

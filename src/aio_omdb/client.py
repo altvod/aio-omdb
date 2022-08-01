@@ -22,6 +22,7 @@ class OMDBClientBase:
         re.compile('Invalid API key'): exc.InvalidAPIKey,
         re.compile('Incorrect IMDb ID'): exc.MovieNotFound,
         re.compile('Movie not found'): exc.MovieNotFound,
+        re.compile('The offset specified in'): exc.InvalidItemOffset,
     }
 
     def _make_url(self, **query: Any) -> URL:
